@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: skyblue;
+    overflow: hidden;
+    font-family: sans-serif;
+  }
+  
+  #game-container {
+    position: relative;
+    width: 300px;
+    height: 500px;
+    background-color: lightblue;
+    border: 2px solid #000;
+    overflow: hidden;
+  }
+  
+  #bird {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: red;
+    border-radius: 50%;
+    top: 250px;
+    left: 50px;
+  }
+  
+  #pipe, #pipe-inverted {
+    position: absolute;
+    width: 50px;
+    height: 200px;
+    background-color: green;
+    top: 0;
+  }
+  
+  #pipe-inverted {
+    transform: rotate(180deg);
+    top: auto;
+    bottom: 0;
+  }
+  
